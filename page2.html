@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html id="monalisa" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="java/p5.js"type="text/javascript"></script>
+  <script src="java/p5.sound.min.js"type="text/javascript"></script>
+  <script src="java/webcam.js"type="text/javascript"></script>
+</head>
+
+<body>
+  <p>Your Self Portrait At The Exhibition "L'Admiration De Soi, L'Admiration Des Autres" Is Now Worth
+  <input type="text" name="TextBox" id="TextBox" value="0" />
+       <input type="Button" id='AddButton' value="+" />
+       <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#AddButton').click( function() {
+                    var counter = $('#TextBox').val();
+                    counter++ ;
+                    $('#TextBox').val(counter);
+                });
+            });
+        </script>
+         Million Dollars
+      </p>
+
+</body>
+
+</html>

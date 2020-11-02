@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html id="enter" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Louver Museum</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</style>
+
+</head>
+<body>
+  <div class="headDiv">
+  <h1>The Wait Is Over! Now It's Your Chance To Visit Louver Museum!</h1>
+  <h2> Exhibition (currently on view)
+   "l'admiration de soi, l'admiration des autres"
+  </h2>
+  </div>
+  <div class="dateDiv">
+  <h3>opening </h3>
+  <p id="date"></p>
+</div>
+<div class="enterhere">
+  <h4>  <a href="page2.html">Enter From Here...</a> 
+  </h4>
+</div>
+<script>
+window.onload = setInterval(clock,1000);
+function clock()
+{
+    var d = new Date();
+    var date = d.getDate();
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+    month = monthArr[month];
+    document.getElementById("date").innerHTML=date+" "+month+", "+year;
+}
+</script>
+
+
+
+<main>
+</main>
+</body>
+
+
+</html>
